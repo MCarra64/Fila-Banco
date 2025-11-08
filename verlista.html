@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fila del Banco</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-primary btn-block col-md-2 mt-3" style="display: block; margin: 0 auto;" onclick="agregarCaja()">Agregar Caja</button>
+                <div class="container mt-3 border p-3" style="background-color: #f8f9fa;">
+                    <div id="cajas" class="row mt-3"></div>
+                </div>
+                <hr>
+                <div class="container mt-3 border p-3">
+                    <div id="cajas" class="row mt-3"></div>
+                </div>
+                <button class="btn btn-info btn-block mt-2" onclick="agregarCliente()">Agregar cliente a la fila</button>
+                <hr>
+                <button class="btn btn-warning btn-block mt-2" onclick="atenderCliente()">Atender cliente (quitar de la fila)</button>
+                <hr>
+                <button class="btn btn-success btn-block mt-2" onclick="cantidadClientes()">Cantidad de clientes en la fila</button>
+                <button class="btn btn-success btn-block mt-2" onclick="primerCliente()">Primer cliente en la fila</button>
+                <button class="btn btn-success btn-block mt-2" onclick="ultimoCliente()">Último cliente en la fila</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="lista.js"></script>
+</body>
+</html>
